@@ -1,8 +1,13 @@
+import Flex from "../Common/Flex"
 
 function Navbar() {
   return (
     <section className="navbar">
-        <div></div>
+        <div>
+            <Flex>
+                
+            </Flex>
+        </div>
     </section>
   )
 }
