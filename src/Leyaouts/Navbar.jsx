@@ -3,7 +3,7 @@ import Images from "../Common/Images"
 import logo from "../assets/my-logo.png"
 function Navbar() {
     return (
-        <section className="navbar    px-[100px]">
+        <section className="navbar  px-[100px]">
             <div>
                 <Flex className=" justify-between items-center ">
                     <div className="w-[5%] pt-[10px]">
