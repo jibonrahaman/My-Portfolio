@@ -25,8 +25,8 @@ export default {
         "thirteen" : "#3d4453",
       },
       boxShadow:{
-        'shadow':"",
-        'online':"0 10px 15px -3px rgba(0,0,0,.1)",
+        'shadow':"0 10px 20px -3px rgba(0,0,0,.3)",
+        'online':"0 4px 6px -4px rgba(0,0,0,.1);",
  
         },
     },
