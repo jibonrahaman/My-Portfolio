@@ -3,9 +3,6 @@ import MyPhoto from "../assets/my-photo.png"
 import Images from "../Common/Images"
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 function Banner() {
   return (
@@ -35,21 +32,18 @@ function Banner() {
 
             <Flex className=" justify-center gap-x-3">
             <a href="https://github.com/jibonrahaman">
-            <div className="px-6 text-xl py-2 flex bg-black text-white items-center gap-x-2 rounded-md">
+            <div className="px-6 text-xl py-2 flex bg-black text-white items-center gap-x-2 rounded-md hover:scale-105 duration-300 hover:underline">
                 <FaGithub />
               <p>Github</p>
               </div>
             </a>
              
              <a href="mailto:mdshahriarfardous407@gmail.com">
-              <div className="px-6 text-xl py-2 flex bg-black text-white items-center gap-x-2 rounded-md">
+              <div className="px-6 text-xl py-2 flex bg-black text-white items-center gap-x-2 rounded-md hover:scale-105 duration-300 hover:underline">
               <MdMarkEmailRead />
               <p>Email</p>
               </div>
-             </a>
-
-         
-          
+             </a> 
           </Flex>
 
           </div>
