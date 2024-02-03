@@ -20,13 +20,10 @@ function Navbar() {
                             <li className="relative after:absolute after:content-[''] after:bottom-[-5px] after:left-0  after:w-0 after:h-1 after:rounded-md after:bg-white  duration-700 after:duration-700 hover:after:w-6">Blog</li>
                           
                             <li className="relative after:absolute after:content-[''] after:bottom-[-5px] after:left-0  after:w-0 after:h-1 after:rounded-md after:bg-white  duration-700 after:duration-700 hover:after:w-6">About</li>
-
-                            
-                
-                        </ul>
+                     </ul>
 
                     </div>
-                    <button type="button" className="px-6 py-2 rounded-[5px]  text-base bg-first text-white border border-eight hover:bg-transparent"> Contact</button>
+                    <button type="button" className="px-6 py-2 rounded-[5px]  text-base bg-gray-700 text-white border border-eight hover:bg-transparent"> Contact</button>
                 </Flex>
             </div>
         </section>
