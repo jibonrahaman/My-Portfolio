@@ -55,8 +55,17 @@ let  skill =[
         title:"Frontend"
     },
     {
-        url:"./images/next.png",
-        name:"next",
+        url:"./images/NextJs.png",
+        name:"NextJs",
+        title:"Frontend"
+    },
+    {
+        url:"./images/nodejs.png",
+        name:"nodejs",
+        title:"Backend"
+    },{
+        url:"./images/expressJs.png",
+        name:"expressJs",
         title:"Backend"
     },
     {

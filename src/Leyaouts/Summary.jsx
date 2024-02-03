@@ -7,7 +7,12 @@ function Summary() {
   const [Data,setData] =useState(SkillData);
 
   const handleData = (text)=>{
-    console.log(text);
+    const filt = SkillData.filter((item)=>{
+      if(item.title == text){
+        return item
+      }
+    })
+    setData(filt)
   }
 
   return (
@@ -29,7 +34,8 @@ function Summary() {
       <li onClick={()=>handleData ("Frontend")} className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>Fronted</li> 
 
        <li onClick={()=>handleData ("Backend")} className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>Backend</li>
-         <li  className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>All</li>
+
+         <li onClick={()=>setData(SkillData)}  className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>All</li>
      </ul>
    
    <Flex className="h-[200px] mt-2 flex-wrap overflow-y-scroll gap-10 scroll">
@@ -39,6 +45,7 @@ function Summary() {
    <div className=" w-[60px] bg-white p-2 rounded-[7px]">
     <Images src={item.url} />
    </div>
+    <p className=" text-gray-500 text-center">{item.name}</p>
         </div>
       })
      }
