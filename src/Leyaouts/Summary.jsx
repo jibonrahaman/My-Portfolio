@@ -5,7 +5,10 @@ import Images from "../Common/Images";
 import '../App.css'
 function Summary() {
   const [Data,setData] =useState(SkillData);
- console.log(Data);
+
+  const handleData = (text)=>{
+    console.log(text);
+  }
 
   return (
 <section className="skill-summary mx-auto max-w-container md:mt-10">
@@ -23,10 +26,10 @@ function Summary() {
     
     <div className="mt-5">
      <ul className=" flex gap-x-5">
-      <li className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>Fronted</li> 
+      <li onClick={()=>handleData ("Frontend")} className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>Fronted</li> 
 
-       <li className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>Backend</li>
-         <li className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>All</li>
+       <li onClick={()=>handleData ("Backend")} className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>Backend</li>
+         <li  className='font-dm cursor-pointer text-base hover:bg-black hover:text-white px-3 py-1 duration-300 rounded-[5px]'>All</li>
      </ul>
    
    <Flex className="h-[200px] mt-2 flex-wrap overflow-y-scroll gap-10 scroll">
