@@ -5,7 +5,10 @@ import Images from "../Common/Images";
 import '../App.css'
 function Summary() {
   const [Data,setData] =useState(SkillData);
-  const [input,setInput] =useState('')
+  const [input,setInput] =useState('');
+  const handleChange =(e)=>{
+   console.log(e.target.value);
+  }
 
   const handleData = (text)=>{
     const filt = SkillData.filter((item)=>{
