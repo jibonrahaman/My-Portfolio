@@ -14,9 +14,10 @@ function Summary() {
    const filterData= SkillData.filter((item)=>{
      const inputName=input.toLocaleLowerCase();
      const itemName = item.name.toLocaleLowerCase();
-     return inputName == "" ? console.log('helll'):console.log("gg")
+     return inputName == "" ? itemName : itemName.includes(inputName)
    })
-  },[])
+   setData(filterData)
+  },[input])
 
   const handleData = (text)=>{
     const filt = SkillData.filter((item)=>{
