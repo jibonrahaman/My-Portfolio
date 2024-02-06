@@ -17,7 +17,11 @@ function CurrentProject() {
       <Images src={orebi} alt={orebi} className="group-hover:scale-110 duration-500"  />
       </div>
 
-      <div className=" w-full h-full bg-black/70 absolute top-0 left-[-300px] group-hover:left-0 duration-500   "></div>
+      <div className=" w-full h-full bg-black/70 absolute top-0 left-[-100%] group-hover:left-0 duration-500   "></div>
+
+      <div  className=" w-full h-full bg-green-500 opacity-50 absolute top-[100%] group-hover:top-0 left-0 duration-1000 ">
+        
+      </div>
          </div>
          </Flex>
           </div>
