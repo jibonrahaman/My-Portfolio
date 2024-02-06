@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Flex from "../Common/Flex"
 import SkillData from '../Data/Data'
 import Images from "../Common/Images";
@@ -7,8 +7,14 @@ function Summary() {
   const [Data,setData] =useState(SkillData);
   const [input,setInput] =useState('');
   const handleChange =(e)=>{
-   console.log(e.target.value);
+  setInput(e.target.value);
   }
+
+  useEffect(()=>{
+   const filterData= SkillData.filter((item)=>{
+     const inputName=input.toLocaleLowerCase();
+   })
+  },[])
 
   const handleData = (text)=>{
     const filt = SkillData.filter((item)=>{
