@@ -13,6 +13,8 @@ function Summary() {
   useEffect(()=>{
    const filterData= SkillData.filter((item)=>{
      const inputName=input.toLocaleLowerCase();
+     const itemName = item.name.toLocaleLowerCase();
+     return inputName == "" ? console.log('helll'):console.log("gg")
    })
   },[])
 
@@ -36,7 +38,7 @@ function Summary() {
     <div className=" w-[40%] text-white">
     <Flex className=" gap-x-10">
     <h2 className=" text-3xl font-bold text-sky-400 ">My Skills</h2>
-    <input onChange={handleChange} type="text" placeholder="search skill.." className='border  px-5  rounded-[5px] w-[180px] h-[40px] placeholder:text-sm placeholder:font-dm '  />
+    <input  type="text" placeholder="search skill.." onChange={handleChange} className='border  px-5  rounded-[5px] w-[180px] h-[40px] placeholder:text-sm placeholder:font-dm text-black outline-none'  />
     </Flex>
     
     <div className="mt-5">
