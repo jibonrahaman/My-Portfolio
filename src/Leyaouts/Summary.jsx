@@ -29,7 +29,7 @@ function Summary() {
   }
 
   return (
-<section className="skill-summary mx-auto max-w-container md:mt-10">
+<section className="skill-summary mx-auto max-w-container mt-12 ">
 <Flex className=" justify-between">
     <div className=" w-[40%] text-white ">
         <h2 className=" text-3xl font-bold text-sky-400">Summary</h2>

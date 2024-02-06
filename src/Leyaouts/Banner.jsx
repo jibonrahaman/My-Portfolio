@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 function Banner() {
   return (
-    <section className="banner pt-14 pb-6">
+    <section className="banner pt-14 pb-10">
 
       <div className=" rounded-lg shadow-shadow p-8 max-w-[950px] mx-auto ">
         <Flex className=" justify-between gap-x-4 ">

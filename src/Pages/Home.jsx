@@ -1,4 +1,5 @@
 import Banner from "../Leyaouts/Banner"
+import CurrentProject from "../Leyaouts/CurrentProject"
 import Navbar from "../Leyaouts/Navbar"
 import Summary from "../Leyaouts/Summary"
 
@@ -9,6 +10,7 @@ function Home() {
       <Navbar/>
       <Banner/>
       <Summary/>
+      <CurrentProject/>
     </div>
   )
 }
