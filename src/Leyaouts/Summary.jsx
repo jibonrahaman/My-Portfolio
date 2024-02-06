@@ -5,6 +5,7 @@ import Images from "../Common/Images";
 import '../App.css'
 function Summary() {
   const [Data,setData] =useState(SkillData);
+  const [input,setInput] =useState('')
 
   const handleData = (text)=>{
     const filt = SkillData.filter((item)=>{
@@ -26,7 +27,7 @@ function Summary() {
     <div className=" w-[40%] text-white">
     <Flex className=" gap-x-10">
     <h2 className=" text-3xl font-bold text-sky-400 ">My Skills</h2>
-    <input type="text" placeholder="search skill.." className='border  px-5  rounded-[5px] w-[180px] h-[40px] placeholder:text-sm placeholder:font-dm '  />
+    <input onChange={handleChange} type="text" placeholder="search skill.." className='border  px-5  rounded-[5px] w-[180px] h-[40px] placeholder:text-sm placeholder:font-dm '  />
     </Flex>
     
     <div className="mt-5">
