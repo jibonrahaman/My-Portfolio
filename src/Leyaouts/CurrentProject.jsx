@@ -38,6 +38,11 @@ function CurrentProject() {
 
          <div className=' w-[55%] text-white'>
         <h2>Orebi E-Commerce</h2>
+        <p>On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p>
+        <p>Use is Project :</p>
+        <div className=' flex'>
+          <p className=' text-black px-5 py-2 bg-white rounded-md'>React</p>
+        </div>
          </div>
 
          </Flex>
