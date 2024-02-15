@@ -1,4 +1,3 @@
-import Header from "../Common/Header"
 import orebi from '../assets/orebiCurrent.png'
 import Images from '../Common/Images'
 import Flex from '../Common/Flex';
@@ -7,12 +6,12 @@ import { SiOpenproject } from "react-icons/si";
 
 function CurrentProject() {
     return (
-        <section className="current-project mt-[110px] max-w-container mx-auto">
+        <section className="current-project mt-[90px] max-w-container mx-auto">
           <h2 className=" text-3xl font-bold text-sky-400">Latest Working 
             <span className="text-sky-600"> Projects</span>
           </h2>
 
-          <div className="w-full p-16">
+          <div className="w-full p-14">
          <Flex  className=" justify-between">
          <div className="w-[40%] relative group overflow-hidden">
 
@@ -36,6 +35,11 @@ function CurrentProject() {
 
       </div>
          </div>
+
+         <div className=' w-[55%] text-white'>
+        <h2>Orebi E-Commerce</h2>
+         </div>
+
          </Flex>
           </div>
         </section>
