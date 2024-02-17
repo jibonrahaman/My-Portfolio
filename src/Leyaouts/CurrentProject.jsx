@@ -37,11 +37,15 @@ function CurrentProject() {
          </div>
 
          <div className=' w-[55%] text-white'>
-        <h2>Orebi E-Commerce</h2>
-        <p>On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p>
-        <p>Use is Project :</p>
-        <div className=' flex'>
-          <p className=' text-black px-5 py-2 bg-white rounded-md'>React</p>
+        <h2 className=' text-3xl font-bold'>Orebi E-Commerce</h2>
+        <p className='my-4 w-[70%] text-purple-200'>On this website, user and vendors can sign up and log in. The seller can sell the product and the user can buy the product. The website is fully responsive.</p>
+        <p className=' text-xl mt-5 '>Use is Project :</p>
+        <div className='flex gap-x-8 mt-6'>
+          <p className='text-black px-5 py-2 bg-white rounded-md'>React</p>
+          <p className='text-black px-5 py-2 bg-white rounded-md'>Tailwind</p>
+          <p className='text-black px-5 py-2 bg-white rounded-md'>Redux</p>
+          <p className='text-black px-5 py-2 bg-white rounded-md'>Javascript</p>
+          <p className='text-black px-5 py-2 bg-white rounded-md'>Context Api</p>
         </div>
          </div>
 
