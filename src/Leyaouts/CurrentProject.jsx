@@ -21,20 +21,20 @@ function CurrentProject() {
     pauseOnHover: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow :<NextArrow/> ,
-    prevArrow :<PrevArrow/>,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
   return (
     <section className="current-project mt-[90px] max-w-container mx-auto">
       <div className=' flex justify-between'>
-      <h2 className=" text-3xl font-bold text-sky-400">Latest Working
-        <span className="text-sky-600"> Projects</span>
-      </h2>
-  {/* <Flex>
+        <h2 className=" text-3xl font-bold text-sky-400">Latest Working
+          <span className="text-sky-600"> Projects</span>
+        </h2>
+        {/* <Flex>
     <NextArrow/>
     <PrevArrow/>
   </Flex> */}
-      
+
       </div>
 
 
@@ -50,23 +50,23 @@ function CurrentProject() {
                 </div>
                 <div className=" w-full h-full bg-black/70 absolute top-0 left-[-100%] group-hover:left-0 duration-500   "></div>
                 <div className="w-full h-full  absolute top-0 left-[-100%] group-hover:left-0 duration-500  flex justify-center items-center gap-x-10 text-white text-lg font-bold font-sans underline">
-                  
+
                   <Link >
-                   <button className="flex gap-x-2">                  
-                   <FaGithubAlt size={30} />
-                    <p >View Github</p>
-                      </button>
+                    <button className="flex gap-x-2">
+                      <FaGithubAlt size={30} />
+                      <p >View Github</p>
+                    </button>
                   </Link>
-                  
+
                   <Link to="https://mern-2205-chitchat-chatting-app.vercel.app/">
-                  <button className=" flex gap-x-2">                 
-                   <SiOpenproject size={30} />
-                    <p>Live Project</p>                  
-                   </button>
+                    <button className=" flex gap-x-2">
+                      <SiOpenproject size={30} />
+                      <p>Live Project</p>
+                    </button>
                   </Link>
-                   
-                  
-                   
+
+
+
                 </div>
               </div>
               <div className=' w-[55%] text-white'>
@@ -86,9 +86,9 @@ function CurrentProject() {
 
           </div>
         </div>
- {/* project design 1 */}
+        {/* project design 1 */}
 
-  {/* project design 2 */}
+        {/* project design 2 */}
         <div>
           <div className="w-full p-14">
             <Flex className=" justify-between">
@@ -99,16 +99,16 @@ function CurrentProject() {
                 </div>
                 <div className=" w-full h-full bg-black/70 absolute top-0 left-[-100%] group-hover:left-0 duration-500   "></div>
                 <div className="w-full h-full  absolute top-0 left-[-100%] group-hover:left-0 duration-500  flex justify-center items-center gap-x-10 text-white text-lg font-bold font-sans underline">
-                  
-                   <button className="flex gap-x-2">
-                   <FaGithubAlt size={30} />
+
+                  <button className="flex gap-x-2">
+                    <FaGithubAlt size={30} />
                     <p >View Github</p>
-                   </button>
-                  
-                   <button className=" flex gap-x-2">                 
-                   <SiOpenproject size={30} />
-                    <p>Live Project</p>                  
-                   </button>
+                  </button>
+
+                  <button className=" flex gap-x-2">
+                    <SiOpenproject size={30} />
+                    <p>Live Project</p>
+                  </button>
                 </div>
               </div>
               <div className=' w-[55%] text-white'>
@@ -128,9 +128,9 @@ function CurrentProject() {
 
           </div>
         </div>
- {/* project design 2 */}
+        {/* project design 2 */}
 
-  {/* project design 3 */}
+        {/* project design 3 */}
         <div>
           <div className="w-full p-14">
             <Flex className=" justify-between">
@@ -141,16 +141,16 @@ function CurrentProject() {
                 </div>
                 <div className=" w-full h-full bg-black/70 absolute top-0 left-[-100%] group-hover:left-0 duration-500   "></div>
                 <div className="w-full h-full  absolute top-0 left-[-100%] group-hover:left-0 duration-500  flex justify-center items-center gap-x-10 text-white text-lg font-bold font-sans underline">
-                  
-                   <button className="flex gap-x-2">
-                   <FaGithubAlt size={30} />
+
+                  <button className="flex gap-x-2">
+                    <FaGithubAlt size={30} />
                     <p >View Github</p>
-                   </button>
-                  
-                   <button className=" flex gap-x-2">                 
-                   <SiOpenproject size={30} />
-                    <p>Live Project</p>                  
-                   </button>
+                  </button>
+
+                  <button className=" flex gap-x-2">
+                    <SiOpenproject size={30} />
+                    <p>Live Project</p>
+                  </button>
                 </div>
               </div>
               <div className=' w-[55%] text-white'>
@@ -170,10 +170,10 @@ function CurrentProject() {
 
           </div>
         </div>
-         {/* project design 3 */}
+        {/* project design 3 */}
 
-          {/* project design  4*/}
-         <div>
+        {/* project design  4*/}
+        <div>
           <div className="w-full p-14">
             <Flex className=" justify-between">
               <div className="w-[40%] relative group overflow-hidden">
@@ -183,16 +183,16 @@ function CurrentProject() {
                 </div>
                 <div className=" w-full h-full bg-black/70 absolute top-0 left-[-100%] group-hover:left-0 duration-500   "></div>
                 <div className="w-full h-full  absolute top-0 left-[-100%] group-hover:left-0 duration-500  flex justify-center items-center gap-x-10 text-white text-lg font-bold font-sans underline">
-                  
-                   <button className="flex gap-x-2">
-                   <FaGithubAlt size={30} />
+
+                  <button className="flex gap-x-2">
+                    <FaGithubAlt size={30} />
                     <p >View Github</p>
-                   </button>
-                  
-                   <button className=" flex gap-x-2">                 
-                   <SiOpenproject size={30} />
-                    <p>Live Project</p>                  
-                   </button>
+                  </button>
+
+                  <button className=" flex gap-x-2">
+                    <SiOpenproject size={30} />
+                    <p>Live Project</p>
+                  </button>
                 </div>
               </div>
               <div className=' w-[55%] text-white'>
@@ -212,7 +212,7 @@ function CurrentProject() {
 
           </div>
         </div>
-         {/* project design  4*/}
+        {/* project design  4*/}
 
       </Slider>
 
