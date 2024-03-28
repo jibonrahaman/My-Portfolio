@@ -38,15 +38,17 @@ export default function About() {
     institution: 'Jaldhaka Model Pilot High School'
     }
   ];
-  const [data,setData] =useState(Data)
+  const [datas, setDatas] = useState(skillsData);
+  const skillData = Data.filter()
 const handleClick =(name)=>{
  const filt = data.filter((item)=>{
-if(item.demo == nae){
-  console.log(item);
+if(item.demo == name){
+  return item
 }
  })
-  
+  setDatas(filt)
 }
+
 
   return (
 <section className="mx-w-container mx-auto pt-24">
@@ -67,14 +69,11 @@ if(item.demo == nae){
     
   </Flex>
   {
-    data.map ((item,index)=>{
+    datas.map ((item,index)=>{
       return <div key={index} className=' pt-4'>
       <h5 className=' text-xl text-gray-400'> {item.title}</h5>
-      <p>{item.content}</p>
-    <h5 className=' text-xl text-gray-400 pt-2'>Language:</h5>
-    <p>JavaScript</p>
-    <h5 className=' text-xl text-gray-400 pt-2'>Tools:</h5>
-    <p>Git, GitHub, Figma , Photoshop</p>
+      <p>{item.content}</p>        
+      <p>{item.institution}</p>        
        </div>
     })
    }
