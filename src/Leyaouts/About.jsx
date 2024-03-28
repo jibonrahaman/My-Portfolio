@@ -63,15 +63,22 @@ setDatas(filt)
     <h3 className='font-semibold text-2xl'>A dedicated Full Stack Web Developer based in Market Place</h3>
    <p>Assala Mualaikum! My name is Md Shahriar Fardous. I'm a Full Stack web developer specializing in ReactJs,Next Js, JavaScript, TypeScript, Node.js, Angular, and MongoDB. My focus is on creating responsive web pages and dynamic websites. Currently, I have professional experience in React Js & Next Js</p>
    </div>
-   <Flex>
+   <Flex className="">
    <div className=' pt-2 text-white'>
    <button onClick={()=>handleClick("Skils")} className='font-bold text-xl shadow px-4 shadow-lime-400 hover:text-gray-400'>Skils</button> 
    <button onClick={()=>handleClick("Experience")} className='font-bold text-xl shadow px-4 shadow-lime-400 hover:text-gray-400'>Experience</button>
     <button onClick={()=>handleClick("Education")} className='font-bold text-xl shadow px-4 shadow-lime-400 hover:text-gray-400'>Education</button>
     </div>       
-    
-  </Flex>
- 
+      </Flex>
+      {
+    datas.map ((item,index)=>{
+      return <div key={index} className=' text-white pt-4'>
+      <h5 className=' text-xl text-gray-400'> {item.title}</h5>
+      <p>{item.content}</p>        
+      <p>{item.institution}</p>        
+       </div>
+    })
+   }
    </div>
   </Flex> 
   
