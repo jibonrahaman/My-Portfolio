@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Flex from '../Common/Flex';
 import Images from '../Common/Images';
 import MyPhoto from '../assets/my-photo.png'
@@ -39,14 +39,13 @@ export default function About() {
     }
   ];
   const [datas, setDatas] = useState(skillsData);
-  const skillData = Data.filter()
+  const skillData = Data.filter(item => item.demo === "Skils");
+  useEffect(()=>{
+   setDatas(skillData)
+  }, []);
+
 const handleClick =(name)=>{
- const filt = data.filter((item)=>{
-if(item.demo == name){
-  return item
-}
- })
-  setDatas(filt)
+const filt = Data.filter()
 }
 
 
