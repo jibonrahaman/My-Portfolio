@@ -23,7 +23,7 @@ export default function Portfolio() {
   return (
    <section className="max-w-container mx-auto py-20">
    <Header  text="My Portfolio"/>
-   <ul className=" flex justify-center gap-x-10 text-white font-bold">
+   <ul className="pt-16  flex justify-center gap-x-10 text-white font-bold">
    <li onClick={()=>handleData("Html Css")} className='bg-black hover:text-black hover:bg-white px-2 md:px-3 cursor-pointer py-1 duration-300 rounded-[5px]'>Html Css</li>
    <li onClick={()=>handleData("Bootstrap")} className='bg-black hover:text-black hover:bg-white px-2 md:px-3 cursor-pointer py-1 duration-300 rounded-[5px]'>Bootstrap</li>
    <li onClick={()=>handleData("Taillwind Css")} className='bg-black hover:text-black hover:bg-white px-2 md:px-3 cursor-pointer py-1 duration-300 rounded-[5px]'>Taillwind Css</li>
