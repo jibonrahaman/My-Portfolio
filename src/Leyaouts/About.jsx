@@ -45,7 +45,8 @@ export default function About() {
   }, []);
 
 const handleClick =(name)=>{
-const filt = Data.filter()
+const filt = Data.filter(item => item.demo === "name");
+setDatas(filt)
 }
 
 
