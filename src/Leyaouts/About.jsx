@@ -38,14 +38,17 @@ export default function About() {
     institution: 'Jaldhaka Model Pilot High School'
     }
   ];
+  
+  const skillsData = Data.filter(item => item.demo === "Skils");
   const [datas, setDatas] = useState(skillsData);
-  const skillData = Data.filter(item => item.demo === "Skils");
-  useEffect(()=>{
-   setDatas(skillData)
+
+  useEffect(() => {
+    // Set default data to Skils when the component mounts
+    setDatas(skillsData);
   }, []);
 
 const handleClick =(name)=>{
-const filt = Data.filter(item => item.demo === "name");
+const filt = Data.filter(item => item.demo === name);
 setDatas(filt)
 }
 
@@ -68,15 +71,7 @@ setDatas(filt)
     </div>       
     
   </Flex>
-  {
-    datas.map ((item,index)=>{
-      return <div key={index} className=' pt-4'>
-      <h5 className=' text-xl text-gray-400'> {item.title}</h5>
-      <p>{item.content}</p>        
-      <p>{item.institution}</p>        
-       </div>
-    })
-   }
+ 
    </div>
   </Flex> 
   
