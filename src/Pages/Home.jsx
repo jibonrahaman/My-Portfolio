@@ -1,3 +1,4 @@
+import About from "../Leyaouts/About"
 import Banner from "../Leyaouts/Banner"
 import CurrentProject from "../Leyaouts/CurrentProject"
 import Navbar from "../Leyaouts/Navbar"
@@ -17,6 +18,7 @@ function Home() {
       <Service/>
       <Portfolio/>
       <Problem_Solving />
+      <About/>
     </div>
   )
 }
