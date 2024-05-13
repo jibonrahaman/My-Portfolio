@@ -46,6 +46,7 @@ export default function About() {
   useEffect(() => {
     // Set default data to Skills when the component mounts
     setDatas(skillsData);
+    setActiveButton("Skils")
   }, []);
 
   const handleClick = (name) => {
@@ -57,7 +58,9 @@ export default function About() {
   return (
     <section className="mx-w-container mx-auto pt-24">
       <Flex className="justify-center gap-x-20">
-        <Images src={MyPhoto} alt={MyPhoto} className="w-[25%]"/>
+       <div className="w-[25%] ">
+       <Images src={MyPhoto} alt={MyPhoto} className="h-[90%] " />
+       </div>
         <div className='w-[40%]'>
           <div className='text-gray-300 flex flex-col gap-y-3'>
             <h4 className='font-bold text-4xl text-white'>About Me</h4>
